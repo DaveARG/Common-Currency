@@ -70,19 +70,20 @@ $currencies = include 'Common_Currencies.php';
 
 ### Laravel
 
-For Laravel projects, the dataset is available in **seeder** and **migration** formats:
+For Laravel projects:
 
--   **Migration**: Run the migration to create the `currencies` table.
+1. Run the migrations:
 
-```bash
-php artisan migrate --path=/database/migrations/0000_01_01_000090_create_common_currencies_table.php
-```
+    ```bash
+    php artisan migrate --path=/database/migrations/0000_01_02_000090_create_level_and_categories_table.php
+    php artisan migrate --path=/database/migrations/0000_01_02_000091_create_units_of_measure_table.php
+    ```
 
--   **Seeder**: Seed the currencies into your database using the seeder.
-
-```bash
-php artisan db:seed --class=CommonCurrencySeeder
-```
+2. Run the seeders:
+    ```bash
+    php artisan db:seed --class=LevelAndCategorySeeder
+    php artisan db:seed --class=UnitOfMeasureSeeder
+    ```
 
 ## 💡 Contributing
 
