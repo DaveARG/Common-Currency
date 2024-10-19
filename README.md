@@ -72,17 +72,15 @@ $currencies = include 'Common_Currencies.php';
 
 For Laravel projects:
 
-1. Run the migrations:
+1. Run the migration:
 
     ```bash
-    php artisan migrate --path=/database/migrations/0000_01_02_000090_create_level_and_categories_table.php
-    php artisan migrate --path=/database/migrations/0000_01_02_000091_create_units_of_measure_table.php
+    php artisan migrate --path=/database/migrations/0000_01_01_000090_create_common_currencies_table.php
     ```
 
-2. Run the seeders:
+2. Run the seeder:
     ```bash
-    php artisan db:seed --class=LevelAndCategorySeeder
-    php artisan db:seed --class=UnitOfMeasureSeeder
+    php artisan db:seed --class=CommonCurrencySeeder
     ```
 
 ## 💡 Contributing
